@@ -255,3 +255,6 @@ require_once get_template_directory() . '/includes/customizer.php';
 
 // WPDiscuz
 require_once get_template_directory() . '/plugins/wpdiscuz/class.WpdiscuzCore.php';
+
+// TGMPA
+require_once get_template_directory() . '/plugins/tgm/init.php';
