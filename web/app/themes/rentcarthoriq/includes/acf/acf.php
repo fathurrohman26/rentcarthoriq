@@ -1,0 +1,367 @@
+<?php
+
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+// Slider
+add_action('acf/include_fields', function () {
+    if (! function_exists('acf_add_local_field_group')) {
+        return;
+    }
+
+    acf_add_local_field_group(array(
+        'key' => 'group_680b5a652f8dc',
+        'title' => 'Slider',
+        'fields' => array(
+            array(
+                'key' => 'field_680b5a65af8cf',
+                'label' => 'Title',
+                'name' => 'title',
+                'aria-label' => '',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => 'Car businesses <br /> offer a <span>range of <br /> services </span>',
+                'maxlength' => '',
+                'allow_in_bindings' => 1,
+                'rows' => '',
+                'placeholder' => '',
+                'new_lines' => '',
+            ),
+            array(
+                'key' => 'field_680b5afcaf8d0',
+                'label' => 'Description',
+                'name' => 'description',
+                'aria-label' => '',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => 'Car service is essential for maintaining the performance and longevity of 
+    your vehicle. From oil changes Car service is essential',
+                'maxlength' => '',
+                'allow_in_bindings' => 0,
+                'rows' => '',
+                'placeholder' => '',
+                'new_lines' => '',
+            ),
+            array(
+                'key' => 'field_680b5b18af8d1',
+                'label' => 'Button Text',
+                'name' => 'button_text',
+                'aria-label' => '',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => 'Get Started',
+                'maxlength' => 30,
+                'allow_in_bindings' => 0,
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+            ),
+            array(
+                'key' => 'field_680b5b45af8d2',
+                'label' => 'Button Link',
+                'name' => 'button_link',
+                'aria-label' => '',
+                'type' => 'url',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'allow_in_bindings' => 0,
+                'placeholder' => '',
+            ),
+            array(
+                'key' => 'field_680b5b7daf8d3',
+                'label' => 'Image',
+                'name' => 'image',
+                'aria-label' => '',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'array',
+                'library' => 'all',
+                'min_width' => 755,
+                'min_height' => 810,
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+                'allow_in_bindings' => 0,
+                'preview_size' => 'medium',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'rct-slider',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+        'show_in_rest' => 0,
+    ));
+});
+
+// Pricing
+add_action('acf/include_fields', function () {
+    if (! function_exists('acf_add_local_field_group')) {
+        return;
+    }
+
+    acf_add_local_field_group(array(
+        'key' => 'group_680b6d603cb13',
+        'title' => 'Pricing',
+        'fields' => array(
+            array(
+                'key' => 'field_680b6d6005ebf',
+                'label' => 'Price',
+                'name' => 'price',
+                'aria-label' => '',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'maxlength' => '',
+                'allow_in_bindings' => 0,
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+            ),
+            array(
+                'key' => 'field_680b6d8005ec0',
+                'label' => 'Image (300x299 Recommended)',
+                'name' => 'image',
+                'aria-label' => '',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'array',
+                'library' => 'all',
+                'min_width' => 300,
+                'min_height' => 299,
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+                'allow_in_bindings' => 0,
+                'preview_size' => 'medium',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'pricing',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+        'show_in_rest' => 0,
+    ));
+});
+
+// Testimonial
+add_action('acf/include_fields', function () {
+    if (! function_exists('acf_add_local_field_group')) {
+        return;
+    }
+
+    acf_add_local_field_group(array(
+        'key' => 'group_680b72b7c8d4c',
+        'title' => 'Testimonial',
+        'fields' => array(
+            array(
+                'key' => 'field_680b72b7be78d',
+                'label' => 'Name',
+                'name' => 'name',
+                'aria-label' => '',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'maxlength' => '',
+                'allow_in_bindings' => 0,
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+            ),
+            array(
+                'key' => 'field_680b72e3be78e',
+                'label' => 'Position',
+                'name' => 'position',
+                'aria-label' => '',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'maxlength' => '',
+                'allow_in_bindings' => 0,
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+            ),
+            array(
+                'key' => 'field_680b72ecbe78f',
+                'label' => 'Rating',
+                'name' => 'rating',
+                'aria-label' => '',
+                'type' => 'range',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'min' => 0,
+                'max' => 5,
+                'allow_in_bindings' => 0,
+                'step' => '',
+                'prepend' => '',
+                'append' => '',
+            ),
+            array(
+                'key' => 'field_680b7366be790',
+                'label' => 'Image',
+                'name' => 'image',
+                'aria-label' => '',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'array',
+                'library' => 'all',
+                'min_width' => 80,
+                'min_height' => 80,
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+                'allow_in_bindings' => 0,
+                'preview_size' => 'medium',
+            ),
+            array(
+                'key' => 'field_680b740dab182',
+                'label' => 'Content',
+                'name' => 'content',
+                'aria-label' => '',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'maxlength' => '',
+                'allow_in_bindings' => 0,
+                'rows' => '',
+                'placeholder' => '',
+                'new_lines' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'rct-testimonial',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+        'show_in_rest' => 0,
+    ));
+});
