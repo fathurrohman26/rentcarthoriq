@@ -6,7 +6,9 @@ if (!defined('ABSPATH')) {
 
 $rct_slider_query = new WP_Query(array(
     'post_type' => 'rct-slider',
-    'posts_per_page' => -1
+    'posts_per_page' => -1,
+    'orderby' => 'date',
+    'order' => 'ASC'
 ));
 ?>
 
