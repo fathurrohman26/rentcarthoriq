@@ -23,8 +23,9 @@ public_html
 └── index.php
 ```
 
-## Custom web root
+## Shared Hosting Patchs
 
 ```bash
 git apply patchs/change-webroot.patch
+git apply patchs/change-webpath.patch
 ```
