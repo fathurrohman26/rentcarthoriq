@@ -21,6 +21,10 @@ public_html
 ├── app
 ├── wp-config.php
 └── index.php
+
+# Optional 
+logs
+└── debug.log
 ```
 
 ## Shared Hosting Patchs
@@ -28,4 +32,11 @@ public_html
 ```bash
 git apply patchs/change-webroot.patch
 git apply patchs/change-webpath.patch
+```
+
+## Logs (Custom)
+
+```env
+# Specify optional debug.log path
+# WP_DEBUG_LOG='/path/to/logs/debug.log'
 ```
