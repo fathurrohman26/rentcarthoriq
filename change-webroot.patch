@@ -1,0 +1,13 @@
+diff --git a/config/application.php b/config/application.php
+index 230039a..97f11f5 100644
+--- a/config/application.php
++++ b/config/application.php
+@@ -28,7 +28,7 @@ $root_dir = dirname(__DIR__);
+  *
+  * @var string
+  */
+-$webroot_dir = $root_dir . '/web';
++$webroot_dir = realpath($root_dir . '/../public_html');
+ 
+ /**
+  * Use Dotenv to set required environment variables and load .env file in root
