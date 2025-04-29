@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3377a4b10afdeef1f994928d3e6c77f",
+    "content-hash": "2c52a64fc3e60a5150d8911a0ff47e46",
     "packages": [
         {
             "name": "composer/installers",
@@ -1035,21 +1035,6 @@
             },
             "type": "wordpress-theme",
             "homepage": "https://wordpress.org/themes/twentytwentyfive/"
-        },
-        {
-            "name": "wpengine/advanced-custom-fields",
-            "version": "6.4.0.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://connect.advancedcustomfields.com/v2/plugins/composer_download?s=composer&p=acf&t=6.4.0.1"
-            },
-            "require": {
-                "composer/installers": "~1.0 || ~2.0"
-            },
-            "replace": {
-                "wpackagist-plugin/advanced-custom-fields": "self.version"
-            },
-            "type": "wordpress-plugin"
         }
     ],
     "packages-dev": [

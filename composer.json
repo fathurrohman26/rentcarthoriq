@@ -32,8 +32,7 @@
     "roots/bedrock-disallow-indexing": "^2.0",
     "roots/wordpress": "6.8",
     "roots/wp-config": "1.0.0",
-    "wpackagist-theme/twentytwentyfive": "^1.0",
-    "wpengine/advanced-custom-fields": "^6.4"
+    "wpackagist-theme/twentytwentyfive": "^1.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
