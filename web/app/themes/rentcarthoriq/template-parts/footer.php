@@ -43,10 +43,10 @@ if (!defined('ABSPATH')) {
                                                 <p>Contact</p>
                                             </div>
                                             <p class="footer-widget__contact-text">
-                                                <a href="<?= esc_url(get_theme_mod('rct_contact_settings_contact_1_link')) ?>"><?= esc_html(get_theme_mod('rct_contact_settings_contact_1')) ?></a>
+                                                <a href="<?= esc_url(rct_get_contact_link(get_theme_mod('rct_contact_settings_contact_1'), get_theme_mod('rct_contact_settings_contact_1_link'))) ?>"><?= esc_html(get_theme_mod('rct_contact_settings_contact_1')) ?></a>
                                             </p>
                                             <p class="footer-widget__contact-text">
-                                                <a href="<?= esc_url(get_theme_mod('rct_contact_settings_contact_2_link')) ?>"><?= esc_html(get_theme_mod('rct_contact_settings_contact_2')) ?></a>
+                                                <a href="<?= esc_url(rct_get_contact_link(get_theme_mod('rct_contact_settings_contact_2'), get_theme_mod('rct_contact_settings_contact_2_link'))) ?>"><?= esc_html(get_theme_mod('rct_contact_settings_contact_2')) ?></a>
                                             </p>
                                         </li>
                                         <li>
