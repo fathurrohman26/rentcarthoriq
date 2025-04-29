@@ -41,10 +41,14 @@ if (!defined('ABSPATH')) {
                                 <p>Contact / WhatsApp</p>
                             </div>
                             <h5>
-                                <a href="<?= esc_url(trim(get_theme_mod('rct_contact_settings_contact_1_link'))) ?>"><?= esc_html(get_theme_mod('rct_contact_settings_contact_1')) ?></a>
+                                <a href="<?= esc_url(rct_get_contact_link(get_theme_mod('rct_contact_settings_contact_1'), get_theme_mod('rct_contact_settings_contact_1_link'))) ?>">
+                                    <?= esc_html(get_theme_mod('rct_contact_settings_contact_1')) ?>
+                                </a>
                             </h5>
                             <h5>
-                                <a href="<?= esc_url(trim(get_theme_mod('rct_contact_settings_contact_2_link'))) ?>"><?= esc_html(get_theme_mod('rct_contact_settings_contact_2')) ?></a>
+                            <a href="<?= esc_url(rct_get_contact_link(get_theme_mod('rct_contact_settings_contact_2'), get_theme_mod('rct_contact_settings_contact_2_link'))) ?>">
+                                    <?= esc_html(get_theme_mod('rct_contact_settings_contact_2')) ?>
+                                </a>
                             </h5>
                         </li>
                         <li>

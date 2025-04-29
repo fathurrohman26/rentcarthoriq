@@ -125,3 +125,36 @@ if (!function_exists('rct_plugin_dir_url')) {
         return trailingslashit(rct_plugins_url('', $plugin_folder));
     }
 }
+
+if (!function_exists('rct_get_contact_link')) {
+    function rct_get_contact_link($number, $custom_link = '')
+    {
+        $number = trim($number);
+        $custom_link = trim($custom_link);
+
+        if (!empty($custom_link) && (strpos($custom_link, 'http') === 0 || strpos($custom_link, 'tel:') === 0)) {
+            if (stripos($custom_link, 'wa.me') !== false || stripos($custom_link, 'api.whatsapp.com') !== false) {
+                $parsed = parse_url($custom_link);
+                $clean_number = preg_replace('/[^0-9]/', '', $parsed['path'] ?? '');
+
+                $rebuilt_url = $parsed['scheme'] . '://' . $parsed['host'];
+                if (!empty($clean_number)) {
+                    $rebuilt_url .= '/' . $clean_number;
+                }
+
+                if (!empty($parsed['query'])) {
+                    $rebuilt_url .= '?' . $parsed['query'];
+                }
+
+                return $rebuilt_url;
+            }
+
+            return $custom_link;
+        } elseif (!empty($number)) {
+            return 'https://wa.me/' . preg_replace('/[^0-9]/', '', $number);
+        } else {
+            return '#';
+        }
+    }
+
+}
